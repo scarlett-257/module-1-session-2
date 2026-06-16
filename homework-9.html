@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 2 - Homework</title>
+  </head>
+  <body>
+    <h2>Nộp hồ sơ ứng tuyển</h2>
+    <form>
+      <fieldset>
+        <legend>Thông tin liên hệ</legend>
+
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" /><br />
+
+        <label for="tel">Số điện thoại:</label>
+        <input pattern="[0][1-9][0-9]{8}" id="tel" placeholder="0912345678" />
+      </fieldset>
+      <fieldset>
+        <legend>Hồ sơ đính kèm</legend>
+        <label for="file">Tải lên CV (Định dạng PDF/Word):</label>
+        <input type="file" form enctype=‘multipart/form-data’/>
+      </fieldset>
+
+      <input type="submit" value="Nộp hồ sơ" />
+    </form>
+  </body>
+</html>
