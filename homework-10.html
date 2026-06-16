@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 2 - Homework</title>
+  </head>
+  <body>
+    <h2>Chi tiết Hóa đơn Mua hàng</h2>
+    <table>
+      <caption>
+        Hóa đơn điện tử #HD-20260310
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Tên sản phẩm</th>
+          <th scope="col">Chi tiết</th>
+          <th scope="col">Đơn giá</th>
+          <th scope="col">Thành tiền</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Áo thun Lập trình viên</td>
+          <td>
+            <ul>
+              <li>Màu sắc: Đen</li>
+              <li>Kích cỡ: XL</li>
+              <li>Chất liệu: Cotton 100%</li>
+            </ul>
+          </td>
+          <td>250.000đ</td>
+          <td>250.000đ</td>
+        </tr>
+        <tr>
+          <td>Bàn phím cơ bản</td>
+          <td>
+            <ul>
+              <li>Switch: Red</li>
+              <li>Layout: TKL</li>
+            </ul>
+          </td>
+          <td>800.000đ</td>
+          <td>800.000đ</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" style="text-align: right">
+            <strong>Tổng tiền thanh toán: 1.050.000đ</strong>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+
+    <h2>Đánh giá trải nghiệm mua hàng</h2>
+    <form>
+      <fieldset>
+        <legend>Phản hồi của bạn</legend>
+
+        <label for="satisfaction-level">Mức độ hài lòng:</label>
+        <select id="satisfaction-level">
+          <option value="select">-- Vui lòng chọn số sao --</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br /><br />
+
+        <label for="feedback">Lời nhận xét chi tiết:</label><br />
+        <textarea
+          id="feedback"
+          placeholder="Hãy chia sẻ trải nghiệm của bạn về sản phẩm và dịch vụ..."
+          cols="60"
+          rows="5"
+        ></textarea>
+      </fieldset>
+      <br />
+
+      <input type="submit" value="Gửi phản hồi" />
+    </form>
+  </body>
+</html>
