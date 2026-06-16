@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 2 - Homework</title>
+    <style>
+      label,
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Đăng Ký Đặt Vé Sự Kiện Âm Nhạc</h2>
+    <form>
+      <label for="name">Họ và tên: </label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Nhập họ và tên..."
+        required
+        minlength="3"
+        maxlength="50"
+      />
+      <br />
+
+      <label for="ticket-number">Số lượng vé:</label>
+      <input type="number" id="ticket-number" min="1" max="5" /><br />
+
+      <label for="VIPcode">Mã vé VIP (Đã cấp sẵn):</label>
+      <input type="text" id="VIPcode" value="MUSIC-VIP-2026" readonly /><br />
+
+      <label for="discountcode">Mã giảm giá nội bộ:</label>
+      <input
+        type="text"
+        id="discountcode"
+        value="NOT-ELIGIBLE"
+        disabled
+      /><br />
+
+      <input type="submit" value="Xác nhận đặt vé" />
+    </form>
+  </body>
+</html>
